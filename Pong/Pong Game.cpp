@@ -130,8 +130,13 @@ case 'x':
 	score1=0;
 	score2=0;
 	balldir=onbar;
+	break;
+	case 'y':
+	gameover=false;
+	score1=0;
+	score2=0;
+	balldir=onbar;
 	break;	
-    
 }	
 
 }
@@ -196,7 +201,7 @@ balldir=onbar;}
 int main() {
 	while(gameover)
 	{input();clearScreen();
-cout<<"PLAYER 1 CONTROLS ARE [A],[D],[c]PLAYER 2 CONTROLS ARE [J],[L],[n]/NTO START THE GAME TO RESET PRESS [Z]";
+cout<<"PLAYER 1 CONTROLS ARE [A],[D],[c]. PLAYER 2 CONTROLS ARE [J],[L],[n]. TO START THE GAME OR TO RESET SCORE PRESS [Z]";
     }
 	while(!gameover){
 		clearScreen();
